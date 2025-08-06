@@ -12,7 +12,7 @@ function App() {
         <Route path="/line-callback" element={<LineCallbackPage />} />
         <Route
           path="/dashboard"
-          element={token ? <DashboardPage /> : <Navigate to="/" replace />}
+          element={token ? <DashboardPage /> : <DashboardPage />}
         />
       </Routes>
     </BrowserRouter>
